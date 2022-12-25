@@ -1,0 +1,29 @@
+{
+  "errors": {
+    "internalServerError": "Internal server error",
+    "auth": {
+      "invalidUsernameOrPassword": "Invalid username or password",
+      "userDisabled": "User is disabled",
+      "invalidCurrentPassword": "Invalid current password",
+      "authorizationHeaderMissing": "Authorization header missing",
+      "invalidAuthorizationScheme": "Invalid authorization scheme",
+      "insufficientPermissions": "Insufficient permissions",
+      "invalidSecurityStamp": "Invalid security stamp",
+      "userNotFound": "User not found",
+      "unableToFindUser": "Unable to find user",
+      "invalidTokenBody": "Invalid token body",
+      "invalidToken": {
+        "TokenExpiredError": "Token expired",
+        "NotBeforeError": "Token is not yet valid",
+        "generic": "Invalid token"
+      }
+    },
+    "badRequest": {
+      "newPasswordCantBeTheSameAsLast": "New password can not be the same as current password",
+      "usernameAlreadyTaken": "Username already taken"
+    },
+    "notFound": {
+      "userNotFound": "User not found"
+    }
+  }
+}

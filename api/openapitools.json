@@ -1,0 +1,17 @@
+{
+  "$schema": "../node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+  "spaces": 2,
+  "generator-cli": {
+    "version": "6.2.1",
+    "generators": {
+      "api-client": {
+        "generatorName": "typescript-axios",
+        "output": "../packages/api-client",
+        "inputSpec": "build/swagger.json",
+        "additionalProperties": {
+          "supportsES6": true
+        }
+      }
+    }
+  }
+}

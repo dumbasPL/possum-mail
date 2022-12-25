@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "workspaces": [
+    "api",
+    "app",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "nx": "^15.0.13"
+  },
+  "scripts": {
+    "build": "nx run app:build",
+    "lint": "nx run-many --target=lint"
+  }
+}

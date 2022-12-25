@@ -1,0 +1,72 @@
+{
+  "userDropdown": {
+    "settings": "Ustawienia",
+    "logout": "Wyloguj"
+  },
+  "sidebar": {
+    "home": "Dom",
+    "manageUsers": "Użytkownicy"
+  },
+  "loginForm": {
+    "welcome": "Witamy w {{name}}",
+    "loginToContinue": "Zaloguj się aby kontynuować",
+    "usernameLabel": "Nazwa użytkownika",
+    "usernamePlaceholder": "Wprowadź nazwę użytkownika",
+    "passwordLabel": "Hasło",
+    "passwordPlaceholder": "Wprowadź hasło",
+    "loginButton": "Zaloguj sie"
+  },
+  "updatePassword": {
+    "title": "Zmień hasło",
+    "currentPasswordLabel": "Aktualne hasło",
+    "newPasswordLabel": "Nowe hasło",
+    "confirmNewPasswordLabel": "Potwierdź nowe hasło",
+    "changePasswordButton": "Zmień hasło",
+    "newPasswordsNeedToMatch": "Nowe hasła muszą być zgodne",
+    "passwordChanged": "Hasło zmienione"
+  },
+  "updateLanguage": {
+    "title": "Zmień język"
+  },
+  "editUser": {
+    "addNewUser": {
+      "title": "Dodaj nowego użytkownika",
+      "button": "Dodaj nowego użytkownika"
+    },
+    "editUser": {
+      "title": "Edytuj użytkownika",
+      "button": "Edytuj użytkownika"
+    },
+    "nameLabel": "Nazwa",
+    "usernameForNewUserPlaceholder": "Nazwa nowego użytkownika",
+    "permissionsLabel": "Uprawnienia",
+    "new": {
+      "passwordLabel": "Hasło",
+      "passwordPlaceholder": "Hasło nowego użytkownika",
+      "permissionsPlaceholder": "Wstępne uprawnienia"
+    },
+    "update": {
+      "passwordLabel": "Nowe hasło",
+      "passwordPlaceholder": "Pozostaw puste, aby nie zmieniać",
+      "permissionsPlaceholder": "Uprawnienia użytkownika"
+    }
+  },
+  "admin": {
+    "manageUsers": {
+      "title": "Zarządzanie użytkownikami",
+      "newUser": "Dodaj użytkownika"
+    },
+    "editUser": "Edytuj użytkownika"
+  },
+  "permissions": {
+    "Active": "Aktywny",
+    "Admin": "Administrator"
+  },
+  "multiselect": {
+    "noOptions": "Lista jest pusta",
+    "noResults": "Brak wyników"
+  },
+  "errorMessage": {
+    "unexpectedError": "Niespodziewany błąd"
+  }
+}

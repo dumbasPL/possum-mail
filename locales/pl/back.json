@@ -1,0 +1,29 @@
+{
+  "errors": {
+    "internalServerError": "Wewnętrzny błąd serwera",
+    "auth": {
+      "invalidUsernameOrPassword": "Nieprawidłowa nazwa użytkownika lub hasło",
+      "userDisabled": "Użytkownik jest nieaktywny",
+      "invalidCurrentPassword": "Nieprawidłowe aktualne hasło",
+      "authorizationHeaderMissing": "Brak nagłówka autoryzacji",
+      "invalidAuthorizationScheme": "Nieprawidłowy schemat autoryzacji",
+      "insufficientPermissions": "Niewystarczające uprawnienia",
+      "invalidSecurityStamp": "Nieprawidłowa pieczęć bezpieczeństwa",
+      "userNotFound": "Użytkownik nie znaleziony",
+      "unableToFindUser": "Nie można znaleźć użytkownika",
+      "invalidTokenBody": "Nieprawidłowa treść tokena",
+      "invalidToken": {
+        "TokenExpiredError": "Token wygasł",
+        "NotBeforeError": "Token nie jest jeszcze ważny",
+        "generic": "Nieprawidłowy Token"
+      }
+    },
+    "badRequest": {
+      "newPasswordCantBeTheSameAsLast": "Nowe hasło nie może być takie samo jak aktualne hasło",
+      "usernameAlreadyTaken": "Nazwa użytkownika zajęta"
+    },
+    "notFound": {
+      "userNotFound": "Użytkownik nie znaleziony"
+    }
+  }
+}

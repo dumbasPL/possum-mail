@@ -1,0 +1,8 @@
+{
+  "watch": ["src/", "locales/**/*back*.json"],
+  "ext": "ts,js,json",
+  "exec": "ts-node src/index.ts",
+  "env": {
+    "NODE_ENV": "development"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "userDropdown": {
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "sidebar": {
+    "home": "Home",
+    "manageUsers": "Users"
+  },
+  "loginForm": {
+    "welcome": "Welcome to {{name}}",
+    "loginToContinue": "Please log in to continue",
+    "usernameLabel": "Username",
+    "usernamePlaceholder": "Enter your username",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "loginButton": "Login"
+  },
+  "updatePassword": {
+    "title": "Change password",
+    "currentPasswordLabel": "Current password",
+    "newPasswordLabel": "New password",
+    "confirmNewPasswordLabel": "Confirm new password",
+    "changePasswordButton": "Change password",
+    "newPasswordsNeedToMatch": "New passwords need to match",
+    "passwordChanged": "Password changed"
+  },
+  "updateLanguage": {
+    "title": "Change language"
+  },
+  "editUser": {
+    "addNewUser": {
+      "title": "Add new user",
+      "button": "Add new user"
+    },
+    "editUser": {
+      "title": "Edit user",
+      "button": "Edit user"
+    },
+    "nameLabel": "Name",
+    "usernameForNewUserPlaceholder": "Username for the new user",
+    "permissionsLabel": "Permissions",
+    "new": {
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Initial password for the new user",
+      "permissionsPlaceholder": "Initial permissions"
+    },
+    "update": {
+      "passwordLabel": "New password",
+      "passwordPlaceholder": "Leave empty to keep current password",
+      "permissionsPlaceholder": "User permissions"
+    }
+  },
+  "admin": {
+    "manageUsers": {
+      "title": "Manage Users",
+      "newUser": "Add new user"
+    },
+    "editUser": "Edit user"
+  },
+  "permissions": {
+    "Active": "Active",
+    "Admin": "Administrator"
+  },
+  "multiselect": {
+    "noOptions": "The list is empty",
+    "noResults": "No results found"
+  },
+  "errorMessage": {
+    "unexpectedError": "Unexpected error"
+  }
+}

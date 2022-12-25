@@ -1,0 +1,23 @@
+{
+  "entryFile": "src/index.ts",
+  "noImplicitAdditionalProperties": "silently-remove-extras",
+  "controllerPathGlobs": ["src/Controllers/*Controller.ts"],
+  "spec": {
+    "outputDirectory": "build",
+    "specVersion": 3,
+    "basePath": "/api/v1",
+    "securityDefinitions": {
+      "jwt": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "routes": {
+    "routesDir": "build",
+    "basePath": "/api/v1",
+    "iocModule": "src/lib/tsyringeTsoaIocContainer.ts",
+    "authenticationModule": "src/authentication.ts"
+  }
+}

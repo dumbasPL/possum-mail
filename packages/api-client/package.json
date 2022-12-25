@@ -1,0 +1,29 @@
+{
+  "name": "api-client",
+  "version": "0.1.0",
+  "description": "OpenAPI client for api-client",
+  "author": "OpenAPI-Generator Contributors",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc && tsc -p tsconfig.esm.json"
+  },
+  "dependencies": {
+    "axios": "^0.26.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.11.5",
+    "typescript": "^4.0"
+  },
+  "nx": {
+    "implicitDependencies": ["api"],
+    "targets": {
+      "build": {
+        "dependsOn": ["^build:api-client"]
+      }
+    }
+  }
+}

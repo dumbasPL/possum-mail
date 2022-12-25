@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- pageTitle %></title>
+    <style>body {color-scheme: dark}</style>
+  </head>
+  <body class="antialiased !bg-slate-900 text-slate-400 h-full overflow-hidden" style="background-color: <%- getColor('slate', '900') %>">
+    <div id="app" class="h-full overflow-hidden"></div>
+    <div id="popovers" class="absolute inset-0 z-50 pointer-events-none"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

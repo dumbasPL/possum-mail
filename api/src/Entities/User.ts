@@ -1,7 +1,7 @@
 import {AutoMap} from '@automapper/classes';
 import {randomBytes} from 'crypto';
 import {Optional} from 'sequelize';
-import {BeforeSave, BeforeValidate, Column, CreatedAt, DataType, DefaultScope, Model, PrimaryKey, Scopes, Table, Unique, UpdatedAt, Validate} from 'sequelize-typescript';
+import {BeforeSave, BeforeValidate, Column, CreatedAt, DataType, DefaultScope, Model, Scopes, Table, Unique, UpdatedAt, Validate} from 'sequelize-typescript';
 import {Permissions} from 'shared-types';
 
 interface UserAttributes {
@@ -31,11 +31,6 @@ interface UserCreationAttributes extends Optional<Omit<UserAttributes, 'security
   },
 }))
 export default class User extends Model<UserAttributes, UserCreationAttributes> {
-
-  @AutoMap()
-  @PrimaryKey
-  @Column
-    id!: number;
 
   @AutoMap()
   @Unique(true)

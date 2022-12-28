@@ -6,6 +6,8 @@ export const up: Migration = async ({context: queryInterface}) => {
     id: {
       type: DataType.INTEGER,
       primaryKey: true,
+      autoIncrement: true,
+      autoIncrementIdentity: true,
     },
     name: {
       type: DataType.STRING,

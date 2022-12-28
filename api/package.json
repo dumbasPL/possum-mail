@@ -56,7 +56,6 @@
     "sequelize-typescript": "^2.1.5",
     "shared-types": "*",
     "smtp-server": "^3.11.0",
-    "sqlite3": "^5.1.2",
     "swagger-ui-express": "^4.6.0",
     "tslog": "^4.4.4",
     "tsoa": "^4.1.3",

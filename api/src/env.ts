@@ -21,6 +21,16 @@ if (!APP_SECRET) {
   APP_SECRET = randomBytes(16);
 }
 
+// DATABASE
+
+export let DATABASE_URI = process.env.DATABASE_URI!;
+if (!DATABASE_URI) {
+  DATABASE_URI = 'postgresql://postgres:admin@localhost:5432/postgres';
+  logger.warn(`DATABASE_URI not set, using: ${DATABASE_URI}`);
+}
+
+// DEV
+
 export const IS_DEV = process.env.NODE_ENV === 'development';
 
 // INITIALIZATION

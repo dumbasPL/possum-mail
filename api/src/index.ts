@@ -1,17 +1,14 @@
 import 'reflect-metadata';
-import {PORT} from './env';
 import sequelize from './sequelize';
 import logger from './logger';
-import app from './app';
 import {migrateDatabase} from './migrations';
 import {initMapper} from './mapper';
 import {container} from 'tsyringe';
 import UserService from './Services/UserService';
 import {loadI18n} from './i18n';
-import {createServer} from 'http';
-import {formatServerAddress} from './util/ip';
 import ConfigService from './Services/ConfigService';
 import eventBuss, {initEventBuss} from './eventBuss';
+import {createHttpServer} from './app';
 
 async function main() {
   logger.debug('Starting main');
@@ -29,10 +26,8 @@ async function main() {
   await container.resolve(ConfigService).init();
   await container.resolve(UserService).createInitialUser();
 
-  const server = createServer(app);
+  createHttpServer();
 
-  logger.debug(`Starting express server on port ${PORT}`);
-  server.listen(PORT, () => logger.info(`Server listening on http://${formatServerAddress(server)}`));
   eventBuss.emit('initialized');
 }
 

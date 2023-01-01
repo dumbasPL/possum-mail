@@ -2,16 +2,16 @@ import 'dotenv/config';
 import {randomBytes} from 'crypto';
 import logger from './logger';
 
-// GENERIC
+// HTTP
 
-export let PORT = parseInt(process.env.PORT ?? '');
-if (!Number.isInteger(PORT)) {
-  PORT = 3000;
+export let HTTP_PORT = parseInt(process.env.PORT ?? '');
+if (!Number.isInteger(HTTP_PORT)) {
+  HTTP_PORT = 3000;
 }
 
 export let BASE_PATH = process.env.BASE_PATH!;
 if (!BASE_PATH) {
-  BASE_PATH = `http://localhost:${PORT}/api`;
+  BASE_PATH = `http://localhost:${HTTP_PORT}/api`;
   logger.warn(`BASE_PATH not set, using ${BASE_PATH} as the base path`);
 }
 

@@ -9,9 +9,12 @@ import {loadI18n} from './i18n';
 import ConfigService from './Services/ConfigService';
 import eventBuss, {initEventBuss} from './eventBuss';
 import {createHttpServer} from './app';
+import {registerServices} from './Services';
 
 async function main() {
   logger.debug('Starting main');
+
+  registerServices();
 
   await loadI18n();
 

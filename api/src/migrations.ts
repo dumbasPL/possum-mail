@@ -7,7 +7,7 @@ import sequelize from './sequelize';
 export const umzug = new Umzug({
   migrations: {
     glob: __dirname + '/Migrations/*.{js,ts}',
-    resolve: ({name, path: migrationFilePath, context}) => {
+    resolve: ({name, path: migrationFilePath}) => {
       const migration = require(migrationFilePath!);
       return {
         name: path.parse(name).name,
@@ -37,5 +37,5 @@ export async function migrateDatabase() {
 }
 
 if (require.main === module) {
-  umzug.runAsCLI();
+  umzug.runAsCLI().then(ret => process.exit(ret ? 0 : 1));
 }

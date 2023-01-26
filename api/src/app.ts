@@ -29,7 +29,7 @@ export function createHttpServer() {
   const server = createServer(app);
 
   logger.debug(`Starting express server on port ${HTTP_PORT}`);
-  server.listen(HTTP_PORT, () => logger.info(`Server listening on http://${formatServerAddress(server)}`));
+  server.listen(HTTP_PORT, () => logger.info(`HTTP server listening on http://${formatServerAddress(server.address())}`));
 
   return server;
 }

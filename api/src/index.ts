@@ -9,14 +9,18 @@ import {loadI18n} from './i18n';
 import ConfigService from './Services/ConfigService';
 import eventBuss, {initEventBuss} from './eventBuss';
 import {createHttpServer} from './app';
+import {createMailServer} from './mail';
 import {registerServices} from './Services';
+import {FsService} from './Services/FsService';
 
 async function main() {
   logger.debug('Starting main');
 
+  await loadI18n();
+
   registerServices();
 
-  await loadI18n();
+  await container.resolve<FsService>('FsService').init();
 
   await sequelize.authenticate();
   logger.info(`Connected to database ${sequelize.getDatabaseName()} using ${sequelize.getDialect()} v${await sequelize.databaseVersion()}`);
@@ -30,6 +34,7 @@ async function main() {
   await container.resolve(UserService).createInitialUser();
 
   createHttpServer();
+  createMailServer();
 
   eventBuss.emit('initialized');
 }

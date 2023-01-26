@@ -22,6 +22,13 @@ if (!APP_SECRET) {
   APP_SECRET = randomBytes(16);
 }
 
+// SMTP
+
+export let SMTP_PORT = parseInt(process.env.SMTP_PORT ?? '');
+if (!Number.isInteger(SMTP_PORT)) {
+  SMTP_PORT = 25;
+}
+
 // DATABASE
 
 export let DATABASE_URI = process.env.DATABASE_URI!;

@@ -1,7 +1,6 @@
-import {Server} from 'http';
+import {AddressInfo} from 'net';
 
-export function formatServerAddress(server: Server) {
-  const address = server.address();
+export function formatServerAddress(address: AddressInfo | string | null) {
   if (address == null) {
     return 'NULL';
   }

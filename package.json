@@ -10,6 +10,8 @@
   },
   "scripts": {
     "build": "nx run app:build",
-    "lint": "nx run-many --target=lint"
+    "lint": "nx run-many --target=lint",
+    "dc:up": "docker-compose -f docker-compose.dev.yml up -d",
+    "dc:down": "docker-compose -f docker-compose.dev.yml down --remove-orphans"
   }
 }
